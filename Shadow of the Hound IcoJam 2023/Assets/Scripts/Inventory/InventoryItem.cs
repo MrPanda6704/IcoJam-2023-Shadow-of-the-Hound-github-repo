@@ -1,16 +1,19 @@
 using Microsoft.Unity.VisualStudio.Editor;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
+
 public class InventoryItem : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     [Header("UI")]
-    public UnityEngine.UI.Image image;
+    [SerializeField]private UnityEngine.UI.Image image;
     public Text countText;
 
-    [HideInInspector] public itemSO item;
+    public itemSO item;
     [HideInInspector] public int count = 1;
     [HideInInspector] public Transform parentAfterDrag;
 

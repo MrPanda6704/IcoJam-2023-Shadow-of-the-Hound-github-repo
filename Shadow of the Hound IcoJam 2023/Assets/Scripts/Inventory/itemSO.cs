@@ -9,9 +9,10 @@ public class itemSO : ScriptableObject
 {
     [Header("GamePlay")]
     public TileBase tile;
-    public ItemType type;
+    public ItemName type;
     public ActionType actionType;
-    public Vector2 range = new Vector2(3, 4);
+    public float range;
+    public GameObject prefab;
 
     [Header("UI")]
     public bool stackable;
@@ -19,16 +20,15 @@ public class itemSO : ScriptableObject
     [Header("Both")]
     public Sprite image;
 
-    public enum ItemType
+    public enum ItemName
     {
-        Block,
-        Tool
+        
+        lantern
     }
 
     public enum ActionType
     {
-        Dig,
-        Mine,
-        Fight
+        consumable,
+        permanent
     }
 }

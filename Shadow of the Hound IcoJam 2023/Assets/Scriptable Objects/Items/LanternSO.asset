@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24f7037936915504da3d3a22d1f63118, type: 3}
-  m_Name: ShovelSO
+  m_Name: LanternSO
   m_EditorClassIdentifier: 
   tile: {fileID: 0}
-  type: 1
-  actionType: 1
-  range: 0
-  prefab: {fileID: 0}
-  stackable: 1
-  image: {fileID: 21300000, guid: e97a3f46d8a6f4645909051d41747ae4, type: 3}
+  type: 0
+  actionType: 0
+  range: 5
+  prefab: {fileID: 6652281130512035518, guid: 7745f542b9360274da731222dd85f28a, type: 3}
+  stackable: 0
+  image: {fileID: 21300000, guid: 53dd9f4f959aac04da557bb9fb70e63f, type: 3}
